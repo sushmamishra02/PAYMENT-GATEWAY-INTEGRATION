@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="bb.css">
+  <title>form</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<style>
+  .navbar {
+  position: fixed;
+  
+  width: 100%
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:transparent;
+}
+.navbar li p{
+	text-align: center;
+	color:black;
+	float: left;
+	font-family: serif;
+	font-size: 25px;
+}
+
+.navbar li {
+  
+  color: black;
+  
+  font-family: serif;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.navbar li a {
+  float: right;
+  display: block;
+  color: black;
+  text-align:left;
+  padding: 25px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: green;
+}
+.edit{
+  background-color:lavender;
+}
+</style>
+</head>
+<body class="edit">
+<center>
+  <section class="navbar">
+<ul>
+  <li class="active"><a href="#">INFO</a></li>
+	<li ><a href="index.html">HOME</a></li>
+   	</ul>
+  </section>
+<br>
+<br>
+<br>
+<br>
+<h1>SIGN UP HERE..</h1>
+</center>
+<br></br> 
+<div class="container">
+<br>
+ <form>
+
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="fn" placeholder="Your first name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="ln" placeholder="Your last name..">
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="lname">Address</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="cn" placeholder="Your address..">
+    </div>
+  </div>
+<div class="row">
+    <div class="col-25">
+      <label for="lname">City</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="dep" placeholder="Your city..">
+    </div>
+  </div>
+
+  
+    <div class="row">
+    <div class="col-25">
+      <label for="Email">Email</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email" name="email" placeholder="Enter your email">
+    </div>
+
+    </div>
+  <div class="row">
+                <div class="col-25">
+                  <label for="Phone">Phone</label>
+                </div>
+                <div class="col-75">
+                  <input type="tel" name="phone" placeholder="Enter you Phone">
+                    
+                  </div>
+                </div>
+              <div class="form-btn">
+                <center>
+                <button class="submit-btn" >SUBMIT</button>
+                </center>
+              </div>
+            </form>
+</div>
+  <script src="js/jquery.min.js"></script>
+  <script>
+    $('.form-control').each(function () {
+      floatedLabel($(this));
+    });
+
+    $('.form-control').on('input', function () {
+      floatedLabel($(this));
+    });
+
+    function floatedLabel(input) {
+      var $field = input.closest('.form-group');
+      if (input.val()) {
+        $field.addClass('input-not-empty');
+      } else {
+        $field.removeClass('input-not-empty');
+      }
+    }
+  </script>
+
+  </body>
+</html>

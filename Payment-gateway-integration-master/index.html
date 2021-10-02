@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js"
+      integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyL1Ad4snFpC1/SnyUjRrbdJsw1pGI1"
+      crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+     
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
+
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+       <!-- Favicon -->
+       <link rel="icon" href="fav.png" type="image/png">
+
+
+	
+
+		<title>Payment-Gateway-Integration</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: "Poppins",sans-serif;
+	background-color:floralwhite;
+
+}
+.navbar {
+  position: fixed;
+  
+  width: 100%
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:black;
+}
+.navbar li p{
+	text-align: center;
+	color: white;
+	float: left;
+	font-family: serif;
+	font-size: 25px;
+}
+
+.navbar li {
+  
+  color: white;
+  
+  font-family: serif;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.navbar li a {
+  float: right;
+  display: block;
+  color: white;
+  text-align:left;
+  padding: 25px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: green;
+}
+/* Gallery css
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding:12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+/* The dots/bullets/indicators */
+h2{
+font-size: 50px;
+text-align: center;
+color: black;
+font-family: "Poppins",sans-serif;
+
+}
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.card{
+	align-content: right;
+	background-color: #4CAF50;
+}
+.photo{
+  align-items: center;
+  padding-left: 8%;
+  padding-right: 5%;
+
+}
+.photo h2{
+  color:maroon;
+}
+.about{
+  border: forestgreen;
+  display: block;
+
+}
+.about li{
+	float: left;
+  	color: black;
+  	text-align: center;
+  	font-family: serif;
+  	font-size: 25px;
+  	text-decoration: none;
+  	margin-left: 200px;
+}
+.about li a{
+  
+  display: block;
+  	color: black;
+  	text-align: center;
+  	padding: 30px ;
+  	text-decoration: none;
+
+}
+.about li a:hover{
+	background-color: teal;
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 20%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+.footer{
+	background-color:transparent;
+  color: black;
+}
+</style>
+ <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+
+</head>
+
+<body>	
+	<section class="home" id="home">
+	<div class="navbar">
+	<ul >
+		<li><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  Careclub-Donation&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p></li>
+		
+		<li><a href="donation.html">DONATE</a></li>
+    <li><a href="#about">ABOUT</a></li>
+    <li><a href="#home">HOME</a></li>
+
+	</ul>
+</div>
+	<section style="background-image: url('head.jpg');background-size: cover;width:auto;background-repeat: no-repeat;">
+		<br><br>
+
+	<h2 style="color: white;padding-top: 5%; font-size: 80px; text-align:center;padding-left: 50%;font-family: serif;">Not all of us can <br>
+		do great things.<br>But we can do <br> small things with <br>great love.</h2>
+		<p align="right" style="font-size: 25px"><a href="donation.html"><button type="submit">Donate Now</button></a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+		<br>
+		<br><br><br><br><br><br>
+	</section>
+	</section>
+		
+		
+    <section class="photo">
+      <h2>HELP BUILD THIS FOUNDATION!</h2>
+      <br><br>
+<img src="1.jpg" height="300" width="300">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<img src="2.jpg" height="300" width="300">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<img src="3.jpg" height="300" width="300">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<img src="4.jpg" height="300" width="300">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<p align="center" style="color: black;font-size: 30px;font-family: cursive;">Show Your Love And Support<br> By Donating Some Amount!!</p>
+<p align="center"><button style="background-color: teal;font-size: 30px">Donate Now</button></p>
+
+<br><br>
+</section>
+<section class="about" id="about">
+	<h2>ABOUT US</h2><br><br>
+
+<section class="card">&nbsp&nbsp&nbsp&nbsp&nbsp<img src="home.png" height="520" width="600" align="left">
+<h3 style="font-size: 40px; font-family: sans-serif; align-content: right;color: white;">&nbsp&nbspA very heartly<br> &nbsp&nbspWelcome to  <br>&nbsp&nbspCareclub Foundation<br><p style="font-family: cursive; align-content: right;color: white;font-size: 30px">&nbsp&nbspOur foundation is certified charity campaign <br>&nbsp&nbsp for homeless animals means that all funds <br> &nbsp&nbsp will be sent directly to the charity you’re <br>&nbsp&nbsp supporting.<br>&nbsp&nbsp You don’t have to worry about withdrawing or<br>&nbsp&nbsp managing funds yourself.<br><br></p></h3></section>
+<br><br>
+
+
+</section>
+<br>
+
+
+</section>
